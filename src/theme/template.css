@@ -1,0 +1,429 @@
+/* TEMP LOGIN ====================================== */
+.temp-login{
+    display: grid;
+    align-items:center;
+    grid-gap: 20px;
+    padding:10px 20px;
+    grid-gap:20px;
+	grid-template: 
+	"section-login-left section-login-right" auto/
+		50% 50%
+}
+.section-login-left{
+	grid-area: section-login-left;
+    display: grid;
+    justify-items: end;
+}
+.section-login-left>img{
+    object-fit: contain;
+    width: 80%;
+    max-width: 500px;
+}
+.section-login-right{
+	grid-area: section-login-right;
+    display: grid;
+    align-content: center;
+    align-self:stretch;
+    justify-self: start;
+    margin-top:30px; grid-gap:40px;
+    max-width: 500px;
+}
+
+.section-main-head{
+    display: none;
+}
+.section-main-body-xs{
+    display: none;
+}
+.temp-main{
+	display: grid;
+	grid-template: 
+	"section-main-menu section-main-body" auto/
+		240px  auto
+}
+
+.section-main-menu{
+	grid-area: section-main-menu;
+	background: var(--salmon);
+	display: grid;
+    padding: 20px 15px;
+    grid-gap: 10px;
+    align-content: start;
+}
+
+.section-main-body{
+	grid-area: section-main-body;
+	display: grid;
+    max-width: 1200px;
+}
+
+
+
+/* TEMP INICIO ====================================== */
+    .section-inicio-body-xs{
+        display: none;
+    }
+    .temp-inicio{
+        display: grid;
+        grid-template: 
+        "section-inicio-body section-inicio-right" auto/
+          auto 280px
+    }
+
+    .section-inicio-body{
+        grid-area: section-inicio-body;
+        display: grid;
+        padding: 40px 20px;
+        align-content: start;
+    }
+    .section-inicio-right{
+        align-content: start;
+        grid-area: section-inicio-right;
+        display: grid;
+        padding: 40px 10px;
+    }
+
+
+/* TEMP NOTIFICACIONES // BENEFICIOS ====================================== */
+
+    .temp-notificaciones, .temp-beneficios{
+        display: grid;
+        padding: 40px 20px;
+        align-content: start;
+    }
+
+
+    .temp-gest-notify{
+        display: grid;
+        margin-top: 20px;
+        grid-gap:20px;
+        padding:10px;
+        grid-template-columns: 60% 350px;
+        align-content: start;
+        align-items:start
+    }
+
+    .temp-gest-notify>div{
+        display: grid;
+        grid-gap: 20px;
+    }
+
+
+    .temp-beneficio{
+        display: grid;
+        margin-top: 35px;
+        padding: 20px;
+        justify-content:center
+    }
+
+    .section-beneficio{
+        grid-gap:20px; min-width:600px
+    }
+
+
+/* TEMP CANJE ====================================== */
+
+
+    .temp-canje{
+        display: grid;
+        margin-top: 20px;
+        grid-template: 
+        "section-canje-body section-canje-right" auto/
+        auto 340px
+    }
+
+    .section-canje-body{
+        grid-area: section-canje-body;
+        display: grid;
+        grid-gap: 20px;
+        padding: 0px 10px;
+        align-content: start;
+        max-height: 100vh;
+        overflow-y: scroll;
+    }
+
+    .section-canje-right{
+        grid-area: section-canje-right;
+        display: grid;
+        grid-gap: 20px;
+        margin-top: 45px;
+        padding-right: 10px;
+        align-content: start;
+        max-height: 70%;
+    }
+
+
+/* TEMP AYUDA ====================================== */
+
+    .temp-ayuda-xs{
+        display: none;
+    }
+    .temp-ayuda{
+        display: grid;
+        margin-top: 20px;
+        grid-template: 
+        "section-ayuda-lateral section-ayuda-body" auto/
+        360px auto 
+    }
+
+    .section-ayuda-lateral{
+        grid-area: section-ayuda-lateral;
+        display: grid;
+        grid-gap: 20px;
+        padding: 0px 10px;
+        align-content: start;
+    }
+
+    .section-ayuda-body{
+        grid-area: section-ayuda-body;
+        display: grid;
+        padding: 0px 10px;
+        grid-template: 
+        "section-ayuda-body-top" 90px
+        "section-ayuda-body-content" auto
+	    "section-ayuda-body-bottom" 80px/
+        100%
+    }
+    
+    .section-ayuda-body-top{
+        grid-area: section-ayuda-body-top;
+        display: grid;
+        background: var(--fondo);
+        padding:10px;
+        border-radius: 10px;
+        grid-template-columns: 90px auto;
+        top: 0;
+        z-index: 1;
+        justify-content:start;
+        align-items:center
+    }
+
+    .section-ayuda-body-content{
+        grid-area:section-ayuda-body-content;
+        background-image: url('../image/fondo-ayuda.svg');
+        background-repeat: repeat;
+        background-size: auto;
+    	align-content: start;
+        grid-gap:10px;
+        padding:15px;      
+        display: grid; 
+        overflow-y: scroll;
+        overflow-x: hidden;
+        max-height: 90vh;
+    }
+
+    .section-ayuda-body-bottom{
+        grid-area:section-ayuda-body-bottom;
+        display: grid;
+        align-content: start;
+        grid-template-columns: auto 70px;
+        padding: 10px 10px;
+        grid-gap: 10px;
+        position:sticky;
+        bottom: 0;
+        box-shadow: 4px -12px 26px rgba(255, 255, 255, .6);
+        background-color: rgba(255, 255, 255, .6);
+        max-height: 20px;
+    }
+  
+
+/* TEMP PROFILE ====================================== */
+
+
+    .temp-profile{
+        display: grid;
+        grid-template: 
+        "section-profile-header" 220px
+        "section-profile-body" auto/
+        100%
+    }   
+
+    .section-profile-header{
+        grid-area: section-profile-header;
+        display: grid;
+        background-color: rgba(95, 10, 10, 0.432);
+    }
+
+    .section-profile-body{
+        grid-area: section-profile-body;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        grid-gap: 15px;
+        padding-top: 70px;
+        align-content: start;
+    }
+
+    .section-profile-body>div{
+        display: grid;
+        padding: 15px;
+        grid-gap: 20px;
+    }
+
+
+
+
+
+
+
+
+/* MOBILE ====================================================== */
+
+@media (max-width: 800px){
+
+    .temp-login{
+        align-items:center;
+        padding:10px 20px;
+        grid-gap:20px;
+        justify-items: center;
+        grid-template: 
+        "section-login-right" auto/
+            100%
+    }   
+    .section-login-left{
+        grid-area: section-login-left;
+        display: none;
+    }
+
+    .section-login-right{
+        grid-area: section-login-right;
+        display: grid;
+        justify-items: center;
+        align-content: start;
+        align-self:stretch;
+        justify-self: center;
+        margin-top:30px; grid-gap:40px
+    }
+
+
+    /* MAIN ==========================================*/
+    .temp-main{
+        display: grid;
+        grid-template: 
+        "section-main-head" 80px
+        "section-main-body-xs" auto/
+            100%
+    }
+    .section-main-menu{
+        grid-area:section-main-menu;
+        display: none;
+    }
+    .section-login-left{
+        grid-area: section-main-body;
+        display: none;
+    }
+
+    .section-main-head{
+        grid-area:section-main-head;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        background-color: var(--salmon);
+        padding: 0px 10px;
+    }
+    .section-main-body-xs{
+        grid-area: section-main-body-xs;
+        display: grid;
+        position: relative;
+    }
+
+
+    /* Principal ==========================================*/
+
+    .section-inicio-body{
+        grid-area: section-inicio-body;
+        display: none;
+    }
+    .section-inicio-right{
+        grid-area: section-inicio-right;
+        display: none;
+    }
+    .temp-inicio{
+        display: grid;
+        grid-template: 
+        "section-inicio-body-xs" auto/
+          100%
+    }
+
+    .section-inicio-body-xs{
+        grid-area: section-inicio-body-xs;
+        display: grid;
+        padding: 10px 10px;
+        align-content: start;
+    }
+
+
+
+    /* Notificaciones ==========================================*/
+
+    .temp-notificaciones{
+        padding: 10px;
+    }
+
+
+    .temp-beneficios{
+        padding: 10px;
+    }
+
+    .temp-gest-notify{
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+
+
+    /* Ayuda ==========================================*/
+
+    .section-ayuda-body-top{
+        position: sticky;
+        top:84px;
+    }
+
+    .temp-ayuda{
+        display: none;
+    }
+    .temp-ayuda-xs{
+        display: grid;
+        margin-top: 20px;
+        grid-template: 
+        "section-ayuda-body" auto/
+        100%
+    }
+
+    .temp-ayuda-chat-xs{
+        display: grid;
+        padding: 10px;
+        grid-gap: 10px 20px;
+        align-content:start;
+    }
+
+    .temp-ayuda-mensaje-xs{
+        display: grid;
+        align-content: start;
+    }
+
+
+
+    /* Perfil ==========================================*/
+
+
+    .section-profile-body{
+        grid-template-columns: 1fr;
+    }
+
+
+
+    /* Beneficio ==========================================*/
+
+    .section-beneficio{
+        grid-gap:20px; min-width:300px
+    }
+
+    .temp-beneficio{
+        padding: 10px;
+    }
+
+    /* CANJEADOS ==========================================*/
+
+    .temp-canje{
+        display: none;
+    }
+}
